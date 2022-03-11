@@ -420,6 +420,7 @@ public class CodeConverter {
   }
 
   public static void main(String[] args) {
+	System.out.print("Convert start");
     // Map map = halfToFullMap;
     Map map = fullToHalfMap;
     java.util.Enumeration iter = ((Properties) map).keys();
@@ -441,6 +442,8 @@ public class CodeConverter {
     } catch (Exception ex) {
       Logger.warn(CodeConverter.class, ex);
     }
+	
+	System.out.print("Convert end");
   }
 
   public static String encodeHTML(String str) {
