@@ -442,6 +442,7 @@ public class CodeConverter {
     } catch (Exception ex) {
       Logger.warn(CodeConverter.class, ex);
     }
+	System.out.print("Add Test commit");
 	
 	System.out.print("Convert end");
   }
