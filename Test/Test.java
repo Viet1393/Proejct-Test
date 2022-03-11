@@ -443,11 +443,16 @@ public class CodeConverter {
       Logger.warn(CodeConverter.class, ex);
     }
 
-	System.out.print("Commit first");
-	System.out.print("Commit middle");
-	System.out.print("Commit last");
-	System.out.print("Add Test commit");
-	
+    System.out.print("Commit first");
+    System.out.print("Commit middle");
+    System.out.print("Commit last");
+
+    System.out.print("Add hello world!!!!");
+    System.out.print("Add new test");
+
+    System.out.print("Add Test commit");
+    System.out.print("Add new commit");
+
 	System.out.print("Convert end");
   }
 

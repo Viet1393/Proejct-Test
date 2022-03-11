@@ -1,0 +1,35 @@
+switch branch: git switch "branch name"
+
+reset về header trước khi rebase: git reset --hard ORIG_HEAD
+
+hủy bỏ rebase: git rebase --abort
+
+đè commit git: git commit --amend -m "message"
+
+tiếp tục rebase: git rebase --continue
+
+đánh index tất cả file: git add .
+đánh index từng file: git add path/file
+
+revert file theo commit: git checkout HEAD -- my-file.txt
+
+gộp commit: git rebase -i HEAD
+
+rebase không đẩy lên git, reset head: git pull --rebase/git push
+                                Full: git pull --rebase origin main/git push origin main
+đổi tên branch:
+ - git branch -m new-name (nếu khác branch: git branch -m old-name new-name)
+ - git push origin :old-name new-name (giữ nguyên dấu :)
+ - git push origin -u new-name
+
+create branch git: 
+ - create new branch local: git branch "name of branch"
+ - đẩy lên remote: git push -u origin "name off branch"
+
+delete branch git:
+ - delete branch local: git branch -d "name of branch"
+ - đẩy lên remote: git push origin :"name of branch"
+
+thay đổi message commit:
+ - đổi message: git commit --amend -m "new message"
+ - đẩy lên remote: git push --force
