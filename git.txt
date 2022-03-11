@@ -1,4 +1,7 @@
 switch branch: git switch "branch name"
+pull branch
+ - get thay đổi của branch: git pull
+ - get thay đổi của master: git pull origin master
 
 reset về header trước khi rebase: git reset --hard ORIG_HEAD
 
@@ -13,7 +16,14 @@ tiếp tục rebase: git rebase --continue
 
 revert file theo commit: git checkout HEAD -- my-file.txt
 
-gộp commit: git rebase -i HEAD
+gộp commit (rebase)
+ - get head cần rebase: git rebase -i HEAD
+ - change message (nếu cần): git commit --amend -m "new message"
+ - đẩy lên remote: git push --force
+ thoát rebase: cq
+ thực hiện rebase: wq
+ Note: --force đẩy code lên ghi đè lên file code đã commit rồi
+       --force-with-lease: check có commit không rồi mới đẩy lên
 
 rebase không đẩy lên git, reset head: git pull --rebase/git push
                                 Full: git pull --rebase origin main/git push origin main
